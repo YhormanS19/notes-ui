@@ -1,4 +1,5 @@
 import { usuarios } from "./src/config/database";
+import { alertaRedireccion } from "./src/utils/alertas";    
 
 let btnLogin = document.querySelector("#login");
 btnLogin.addEventListener("click", () => {
@@ -6,8 +7,8 @@ btnLogin.addEventListener("click", () => {
   let contrasena = document.querySelector("#password").value;
     let usuarioAut = usuarios.find((usuario) => usuario.correo === correo && usuario.contrasena === contrasena);
     if (usuariAuto) {
-      alert(`Bienvenido, ${usuario.nombre}`);
+     return alertaRedireccion("Bienvenido al sistema");
     } else {
-      alert("Correo o contraseña incorrectos");
+     return alertaRedireccion("Correo o contraseña incorrectos");
     }
 });
