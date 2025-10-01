@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="/src/pages/css/home.css">
+
     <title>Home</title>
 </head>
 
@@ -12,13 +14,13 @@
     <header>
         <div>
             <article>
-                <span>YS</span>
+                <span id="inicialesUsuario"></span>
             </article>
         </div>
         <nav>
             <a href="#">Home</a>
             <a href="#">Notas</a>
-            <a href="#">Cerrar sesion</a>
+            <button id="btnCerrarSesion" type="button">Cerrar sesion</button>
         </nav>
     </header>
     <script type="module" src="/src/pages/js/home.js"></script>

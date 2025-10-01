@@ -2,6 +2,11 @@ import { usuarios } from "./src/config/database.js";
 import { alertaRedireccion } from "./src/utils/alertas.js";
 import { alertaGeneral } from "./src/utils/alertas.js";
 import { guardarLocalStorage } from "./src/config/local-storage.js";
+import { generateToken } from "./src/utils/generadores-codigos.js";
+
+let token = generateToken();
+console.log(token);
+
 
 let btnLogin = document.querySelector("#login");
 btnLogin.addEventListener("click", () => {
