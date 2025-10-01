@@ -1,3 +1,4 @@
+import { generateId } from '../utils/generadores-codigos.js';
 export const usuarios = [
   {
     nombre: 'Ana Gómez',
