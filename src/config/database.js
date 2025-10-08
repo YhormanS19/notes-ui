@@ -29,4 +29,13 @@ export const usuarios = [
     rol: 'admin'
   }
 ];
+export const Notas = [
+  {
+    id: 1,
+    descripcion: "",
+    fecha: "",
+    autor: ""
+  }
+]
+
 
