@@ -96,7 +96,7 @@ button .arrow::before {
 }
 
 button:hover {
-  background-color: var(--hover-color);
+  background-color: red
 }
 
 button:hover .arrow {
@@ -125,9 +125,22 @@ main {
     width: 3px;
     background-color: black;
   }
-  section {
+  .notes-container {
     width: calc(100% - 30% - 3px);
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     /* background-color: black; */
+    section {
+      height: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 10px;
+    }
   }
 }
 /* From Uiverse.io by Yaya12085 */
@@ -179,4 +192,36 @@ main {
 .form textarea{
 width: 320px;
 height: 250px;
+}
+.card {
+  width: 30%;
+  height: 254px;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+.card p:first-child{
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.card p:nth-child(2){
+  position: absolute;
+  bottom: 5px;
+  font-size: 10px;
+  
+}
+.cardp:last-child{
+  position: absolute;
+  top: 50px;;
+  font-size: 18px;
+  font-weight: 700;
 }
